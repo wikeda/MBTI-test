@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBTI診断テスト</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+
+    <main>
+        <!-- TOPページ -->
+        <section id="top-page">
+            <h1>MBTI診断テスト</h1>
+            <p>20の質問に答えて、あなたの性格タイプを見つけましょう。</p>
+            <button id="start-button">診断を始める</button>
+        </section>
+
+        <!-- 質問ページ (初期状態では非表示) -->
+        <section id="question-page" class="hidden">
+            <p id="question-number">質問 1 / 20</p>
+            <h2 id="question-text">ここに質問文が表示されます。</h2>
+            <div class="button-container">
+                <button id="yes-button" class="answer-button">はい</button>
+                <button id="no-button" class="answer-button">いいえ</button>
+            </div>
+        </section>
+
+        <!-- 結果表示ページ (初期状態では非表示) -->
+        <section id="result-page" class="hidden">
+            <h2>あなたの診断結果は...</h2>
+            <h3 id="result-type"></h3>
+            
+            <h4>性格</h4>
+            <p id="result-personality"></p>
+            <h4>強み</h4>
+            <p id="result-strengths"></p>
+            <h4>弱み</h4>
+            <p id="result-weaknesses"></p>
+            <h4>相性のいいMBTI</h4>
+            <p id="result-good-match"></p>
+            <h4>相性の悪いMBTI</h4>
+            <p id="result-bad-match"></p>
+            <h4>仕事面で気をつけること</h4>
+            <p id="result-work-advice"></p>
+
+            <button id="share-button">結果をXでシェアする</button>
+            <button id="retry-button">もう一度診断する</button>
+        </section>
+    </main>
+
+</body>
+</html>
