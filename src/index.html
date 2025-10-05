@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
@@ -12,9 +12,16 @@
     <main>
         <!-- TOPページ -->
         <section id="top-page">
-            <h1>MBTI診断テスト</h1>
-            <p>20の質問に答えて、あなたの性格タイプを見つけましょう。</p>
-            <button id="start-button">診断を始める</button>
+            <div class="hero">
+                <div class="hero-text">
+                    <h1>MBTI診断テスト</h1>
+                    <p>20の質問に答えて、あなたの性格タイプを見つけましょう。</p>
+                    <button id="start-button">診断を始める</button>
+                </div>
+                <figure class="hero-visual">
+                    <img src="assets/hero.svg" alt="MBTIタイプを表現した抽象的なイラスト">
+                </figure>
+            </div>
         </section>
 
         <!-- 質問ページ (初期状態では非表示) -->
@@ -38,7 +45,7 @@
             <p id="result-strengths"></p>
             <h4>弱み</h4>
             <p id="result-weaknesses"></p>
-            <h4>相性のいいMBTI</h4>
+            <h4>相性の良いMBTI</h4>
             <p id="result-good-match"></p>
             <h4>相性の悪いMBTI</h4>
             <p id="result-bad-match"></p>
