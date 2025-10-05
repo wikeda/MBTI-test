@@ -1,14 +1,14 @@
-﻿/* 蝓ｺ譛ｬ逧・↑繧ｹ繧ｿ繧､繝ｫ縺ｨ濶ｲ縺ｮ螳夂ｾｩ */
+/* 基本的なスタイルと色の定義 */
 :root {
-    --primary-color: #4a69bd; /* 關ｽ縺｡逹縺・◆髱・*/
-    --secondary-color: #f6f6f6; /* 譏弱ｋ縺・・濶ｲ */
+    --primary-color: #4a69bd; /* 落ち着いた青 */
+    --secondary-color: #f6f6f6; /* 明るい灰色 */
     --text-color: #333;
     --background-color: #eaf0f6;
     --white-color: #fff;
     --button-hover-color: #3b528f;
 }
 
-/* 蜈ｨ菴薙・繧ｹ繧ｿ繧､繝ｫ */
+/* 全体のスタイル */
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     background-color: var(--background-color);
@@ -32,17 +32,17 @@ main {
     text-align: center;
 }
 
-/* 蜷・・繝ｼ繧ｸ縺ｮ繧ｻ繧ｯ繧ｷ繝ｧ繝ｳ */
+/* 各ページのセクション */
 section {
     padding: 1rem 0;
 }
 
-/* 髱櫁｡ｨ遉ｺ縺ｫ縺吶ｋ縺溘ａ縺ｮ繧ｯ繝ｩ繧ｹ */
+/* 非表示にするためのクラス */
 .hidden {
     display: none;
 }
 
-/* 隕句・縺励→谿ｵ關ｽ */
+/* 見出しと段落 */
 h1, h2, h3 {
     color: var(--primary-color);
 }
@@ -59,7 +59,7 @@ p {
     line-height: 1.6;
 }
 
-/* 繝懊ち繝ｳ縺ｮ蜈ｱ騾壹せ繧ｿ繧､繝ｫ */
+/* ボタンの共通スタイル */
 button {
     background-color: var(--primary-color);
     color: var(--white-color);
@@ -76,7 +76,7 @@ button:hover {
     background-color: var(--button-hover-color);
 }
 
-/* 蝗樒ｭ斐・繧ｿ繝ｳ縺ｮ繧ｳ繝ｳ繝・リ */
+/* 回答ボタンのコンテナ */
 .button-container {
     display: flex;
     justify-content: center;
@@ -84,7 +84,7 @@ button:hover {
     margin-top: 2rem;
 }
 
-/* 邨先棡陦ｨ遉ｺ繝壹・繧ｸ縺ｮ繧ｹ繧ｿ繧､繝ｫ */
+/* 結果表示ページのスタイル */
 #result-page h4 {
     margin-top: 1.5rem;
     margin-bottom: 0.5rem;
