@@ -99,6 +99,39 @@ button:hover {
     border-radius: 8px;
     text-align: left;
 }
+.result-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.result-intro-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+.result-intro-text h3 {
+    margin: 0;
+    text-align: center;
+}
+
+.result-visual {
+    margin: 0;
+    width: 100%;
+    max-width: 240px;
+}
+
+.result-visual img {
+    width: 100%;
+    display: block;
+    border-radius: 16px;
+    box-shadow: 0 12px 24px rgba(74, 105, 189, 0.15);
+}
 /* ヒーローセクション */
 #top-page {
     padding-bottom: 2rem;
@@ -153,5 +186,20 @@ button:hover {
 @media (min-width: 768px) {
     .hero {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .result-intro {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .result-intro-text {
+        align-items: flex-start;
+    }
+
+    .result-intro-text h3 {
+        text-align: left;
     }
 }
