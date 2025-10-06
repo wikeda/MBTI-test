@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
@@ -37,7 +37,14 @@
         <!-- 結果表示ページ (初期状態では非表示) -->
         <section id="result-page" class="hidden">
             <h2>あなたの診断結果は...</h2>
-            <h3 id="result-type"></h3>
+            <div class="result-intro">
+                <figure id="result-visual" class="result-visual">
+                    <img id="result-image" src="" alt="" loading="lazy">
+                </figure>
+                <div class="result-intro-text">
+                    <h3 id="result-type"></h3>
+                </div>
+            </div>
             
             <h4>性格</h4>
             <p id="result-personality"></p>
